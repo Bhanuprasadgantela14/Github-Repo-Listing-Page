@@ -1,0 +1,215 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("./assets/header_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd; /* Add a subtle border below the dashboard */
+}
+
+.logo {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo img {
+    max-width: 80px; /* Adjust the size of the logo */
+    border-radius: 50%;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+#user-avatar {
+    border-radius: 50%;
+    max-width: 50px; /* Adjust the size of the avatar */
+}
+
+#user-details {
+    margin-left: 20px;
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #2577ae;
+}
+
+/* Input and Button Styles */
+#username {
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#get-repositories-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#get-repositories-button:hover {
+    background-color: #2577ae;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+h1, h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+/* Repository Card Styles */
+.repositories {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.repo-card {
+    flex: 0 0 calc(48% - 20px);
+    margin: 10px;
+    border: 2px solid #3498db;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.repo-card:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    color: #555;
+}
+
+/* Pagination Styles */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #2577ae;
+}
+
+.pagination button:disabled {
+    background-color: #ddd;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.pagination button.active {
+    background-color: #12354d;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    background-image: url("./assets/footer_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repositories</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navStyle.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400;1,700&display=swap');
+      </style>
+</head>
+<body>
+
+<header>
+    <!-- User Profile Section -->
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img id="logo" src="./assets/github_logo(1).png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h1 class="tophead">Git Repo Listing Page</h1>
+    <div id="user-profile">
+        <img id="user-avatar" src="" alt="">
+        <div id="user-details">
+            <h2 id="user-name"></h2>
+            <p id="user-bio"></p>
+            <p id="user-location"></p>
+           
+            <div id="social-links">
+                <!-- Add social links here -->
+            </div>
+            <!-- <span>Twitter:</span> -->
+            <a id="twitter-profile-link" href="" target="_blank"></a>
+            <a id="github-profile-link" href="" target="_blank">GitHub Profile</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <!-- Repository Listing Section -->
+    <h1>Github Repositories</h1>
+    <label for="username">Enter Github Username:</label>
+    <input type="text" id="username" placeholder="e.g., johnpapa">
+
+    <button id="get-repositories-button">Get Repositories</button>
+    <div id="loader" class="loader rotating"></div>
+
+  
+    <div id="repositories" class="repositories"></div>
+
+    <!-- <div id="pagination" class="pagination"></div> -->
+    <!-- Inside the body of your HTML -->
+<div id="pagination" class="pagination">
+    <button id="older-button" disabled>Older</button>
+    <span id="page-indicator">Page 1</span>
+    <button id="newer-button" disabled>Newer</button>
+</div>
+
+</div>
+
+<footer>
+    <!-- Pagination Controls -->
+    <!-- Add your pagination controls here -->
+    <!-- Add this inside the <div class="container"> -->
+<div id="page-navigation" class="page-navigation"></div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script type='text/javascript' src='config.js'></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://wallpapertag.com/wallpaper/full/6/0/e/717862-google-desktop-wallpaper-1920x1200-windows-10.jpg') center/cover fixed no-repeat; /* Background image for the entire screen */
+    overflow: hidden; /* Prevents background image overflow */
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    z-index: 1; /* Set z-index to ensure this container is above the background image */
+}
+
+.cover-page {
+    position: relative;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(45deg, #3498db, #9b59b6, #e74c3c, #2ecc71); /* Animated gradient background */
+    background-size: 400% 400%; /* For the gradient animation */
+    animation: gradientAnimation 10s ease infinite; /* Animation details */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #fff;
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff5252;
+}
+
+/* Additional Styles for a Responsive Design */
+@media (max-width: 767px) {
+    .cover-page {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
